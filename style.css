@@ -1,1 +1,25 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
+* {
+    margin-left:calc(2040%/1440);
+    margin-right:calc(2040%/1440);
+}
+
+
+h1::before {
+    /* put image of tree here */
+}
+
+body {
+    background-color: #6D89BF;
+}
+
+header {
+text-align: center;
+display: inline-block;
+width: 100%
+}
+
+aside, header {
+    background-color: #C67004;
+}
+
