@@ -1,12 +1,21 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
-* {
-    margin-left:calc(2040%/1440);
-    margin-right:calc(2040%/1440);
+body {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 
+.preamble, #zen-supporting {
+    background-color: #C55643;
+    display: flex;
+    flex-direction: column;
+    max-width: 52%
+}
+
 h1::before {
-    /* put image of tree here */
+    background-image:url(/images/tree-removebg-preview.png) ;
+    width: 100%;
+    height: 100%;
 }
 
 body {
@@ -16,10 +25,13 @@ body {
 header {
 text-align: center;
 display: inline-block;
-width: 100%
+width: 100%;
 }
 
 aside, header {
     background-color: #C67004;
 }
 
+aside {
+    max-width: 47%
+}
