@@ -7,19 +7,31 @@ body {
 
 .preamble, #zen-supporting {
     background-color: #C55643;
+    max-width: 52%;
+    position: absolute;
+    margin-left: 20%;
+
+}
+
+.preamble, #zen-supporting, aside {
     display: flex;
     flex-direction: column;
-    max-width: 52%
 }
 
 h1::before {
-    background-image:url(/images/tree-removebg-preview.png) ;
-    width: 100%;
-    height: 100%;
+    content:url(/images/tree-removebg-preview.png);
+    max-width: 5px;
+    max-height: 5px;
+}
+
+h3 ::before {
+    content: url(/images/leafsingle-removebg-preview.png);
 }
 
 body {
     background-color: #6D89BF;
+    display: flex;
+    align-content:flex-end
 }
 
 header {
@@ -33,5 +45,6 @@ aside, header {
 }
 
 aside {
-    max-width: 47%
+    max-width: 47%;
+    border-color: #344566;
 }
