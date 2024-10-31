@@ -5,8 +5,15 @@ font-family: "Irish Grover", system-ui;
   font-weight: 400;
   font-style: normal;
 }
- div.summary p:last-child {
-    
+ div.summary p:last-child:not(a) {
+    opacity: 0;
+}
+
+div.summary p:last-child a {
+    background-color: #344566;
+    color: white;
+    padding: 5px;
+    border: 2px, solid, #C67004;
 }
 
 body {
@@ -44,7 +51,7 @@ div h3 ::before {
     content: url(/images/leafsingle-removebg-preview.png);
 }
 
-body {
+:root {
     background-color: #6D89BF;
     display: flex;
     align-content:flex-end
