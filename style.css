@@ -1,16 +1,30 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+* {
+font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+ div.summary p:last-child {
+    
+}
+
 body {
     margin-left: 15%;
     margin-right: 15%;
 }
-
-
-.preamble, #zen-supporting {
+.preamble {
     background-color: #C55643;
-    max-width: 52%;
-    position: absolute;
-    margin-left: 20%;
+    max-width: 100%;
+    border: 10px, solid, #344566;
+}
 
+ #zen-supporting {
+    background-color: #C55643;
+    max-width: 50%;
+    position: absolute;
+    border: 10px, solid, #344566;
+    right: 15%;
 }
 
 .preamble, #zen-supporting, aside {
@@ -20,11 +34,13 @@ body {
 
 h1::before {
     content:url(/images/tree-removebg-preview.png);
-    max-width: 5px;
-    max-height: 5px;
+    transform: scale(.5);
+    position: absolute;
+    left: 6.5%;
+    top: -145px;
 }
 
-h3 ::before {
+div h3 ::before {
     content: url(/images/leafsingle-removebg-preview.png);
 }
 
@@ -35,9 +51,12 @@ body {
 }
 
 header {
-text-align: center;
-display: inline-block;
-width: 100%;
+    text-align: flex-start;
+    width: 100%;
+    border: 10px, solid, #344566;
+    text-indent: 15%;
+    font-size: 32px;
+    margin-top: -1.5%
 }
 
 aside, header {
@@ -45,6 +64,7 @@ aside, header {
 }
 
 aside {
-    max-width: 47%;
-    border-color: #344566;
+    max-width: 30%;
+    border: 10px, solid, #344566;
+    padding-bottom: 33.55%;
 }
