@@ -6,7 +6,7 @@ font-family: "Irish Grover", system-ui;
   font-style: normal;
 }
  div.summary p:last-child:not(a) {
-    opacity: 0;
+    opacity: 1;
 }
 
 div.summary p:last-child a {
@@ -16,6 +16,14 @@ div.summary p:last-child a {
     border: 2px, solid, #C67004;
 }
 
+#zen-supporting h3::before{
+    content: url(/images/leafsingle-removebg-preview.png);
+    transform: scale(.2);
+    position: absolute;
+    left: -60px
+}
+
+
 body {
     margin-left: 15%;
     margin-right: 15%;
@@ -24,6 +32,8 @@ body {
     background-color: #C55643;
     max-width: 100%;
     border: 10px, solid, #344566;
+    padding-left: 1%;
+    text-indent: 1%;
 }
 
  #zen-supporting {
@@ -31,7 +41,9 @@ body {
     max-width: 50%;
     position: absolute;
     border: 10px, solid, #344566;
-    right: 15%;
+    right: 14%;
+    padding-left: 1%;
+    text-indent: 1%;
 }
 
 .preamble, #zen-supporting, aside {
