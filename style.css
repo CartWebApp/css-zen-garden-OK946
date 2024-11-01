@@ -1,5 +1,15 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+:link {
+    text-decoration: underline;
+    color: black;
+}
+
+:visited{
+    text-decoration: underline;
+    color: black;
+}
+
 * {
 font-family: "Irish Grover", system-ui;
   font-weight: 400;
