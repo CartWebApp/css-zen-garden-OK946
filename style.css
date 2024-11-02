@@ -10,6 +10,16 @@
     color: black;
 }
 
+.summary {
+    background-color: #C67004;
+    border-left: 10px solid #344566;
+    border-right: 10px solid #344566;
+    margin-top: -1.2%;
+    margin-bottom: -1.2%;
+    padding-bottom: 1%;
+    width: 99.995%;
+}
+
 * {
 font-family: "Irish Grover", system-ui;
   font-weight: 400;
@@ -26,13 +36,31 @@ div.summary p:last-child a {
     border: 2px, solid, #C67004;
 }
 
-#zen-supporting h3::before{
-    content: url(/images/leafsingle-removebg-preview.png);
-    transform: scale(.2);
-    position: absolute;
-    left: -60px
+h1::after {
+    content:url(images/cloud-removebg-preview\ 3.png);
+    position:absolute;
+    right: 5%;
 }
 
+h2::after {
+    content:url(images/cloud-removebg-preview\ 3.png);
+    position:absolute;
+    right: 3%;
+    top:-5%
+}
+
+#zen-supporting h3:first-child::before{
+    content: url(/images/leafsingle-removebg-preview.png);
+    transform: scale(.15);
+    position: absolute;
+    left: -100px;
+    top: -80px
+}
+
+.sidebar h3:first-child::before{
+    content: url(/images/image\ 6.png);
+    transform:scale(1)
+}
 
 body {
     margin-left: 15%;
@@ -40,10 +68,11 @@ body {
 }
 .preamble {
     background-color: #C55643;
-    max-width: 100%;
+    max-width: 101%;
     border: 10px, solid, #344566;
     padding-left: 1%;
     text-indent: 1%;
+    width: 98.99%;
 }
 
  #zen-supporting {
@@ -54,6 +83,7 @@ body {
     right: 14%;
     padding-left: 1%;
     text-indent: 1%;
+    padding-bottom: 5%;
 }
 
 .preamble, #zen-supporting, aside {
@@ -69,9 +99,7 @@ h1::before {
     top: -145px;
 }
 
-div h3 ::before {
-    content: url(/images/leafsingle-removebg-preview.png);
-}
+
 
 :root {
     background-color: #6D89BF;
@@ -95,5 +123,19 @@ aside, header {
 aside {
     max-width: 30%;
     border: 10px, solid, #344566;
-    padding-bottom: 33.55%;
+    padding-bottom: 45.45%;
+}
+
+aside::after {
+    content:url(/images/leaf-removebg-preview\ 2.png);
+    position: absolute;
+    bottom: -90%;
+    transform: scale(1.5);
+}
+
+a.zen-github::after {
+    content:url(/images/leaf-removebg-preview\ 2.png);
+    position: absolute;
+    bottom: -7%;
+    transform: scale(1.5);
 }
