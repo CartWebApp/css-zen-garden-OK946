@@ -5,6 +5,31 @@
     color: black;
 }
 
+[title|=View] {
+    text-decoration: underline;
+}
+
+div > h3  {
+    text-decoration: underline;
+}
+
+a:hover{
+    background-color: #344566;
+    color: white;
+}
+
+:empty {
+    opacity: 0;
+}
+
+div + div {
+    font-size: 101%;
+}
+
+:focus {
+    opacity: 0;
+}
+
 :visited{
     text-decoration: underline;
     color: black;
@@ -27,6 +52,19 @@ font-family: "Irish Grover", system-ui;
 }
  div.summary p:last-child:not(a) {
     opacity: 1;
+}
+
+a:active[title]{
+    background-color: #344566;
+    color: white;
+}
+
+[class=design-name]{
+    font-size: 105%;
+}
+
+[title~=CSS]{
+    color: rgb(12, 12, 12);
 }
 
 div.summary p:last-child a {
@@ -66,7 +104,7 @@ body {
     margin-left: 15%;
     margin-right: 15%;
 }
-.preamble {
+div ~ div.preamble {
     background-color: #C55643;
     max-width: 101%;
     border: 10px, solid, #344566;
@@ -75,7 +113,7 @@ body {
     width: 98.99%;
 }
 
- #zen-supporting {
+ .main.supporting {
     background-color: #C55643;
     max-width: 50%;
     position: absolute;
@@ -138,4 +176,12 @@ a.zen-github::after {
     position: absolute;
     bottom: -7%;
     transform: scale(1.5);
+}
+
+::selection {
+    color:white;
+}
+
+.main .benefits {
+    font-size:101%;
 }
