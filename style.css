@@ -5,6 +5,8 @@
     color: black;
 }
 
+
+
 [title|=View] {
     text-decoration: underline;
 }
@@ -184,4 +186,48 @@ a.zen-github::after {
 
 .main .benefits {
     font-size:101%;
+}
+
+li:last-child::before {
+    content:url(/images/image\ 10.png);
+    position: absolute;
+    bottom: -850px;
+    transform: scale(1.75);
+    left: 30px
+}
+
+li:last-of-type[class*=zen-translations]::after {
+    content:url(/images/image\ 11.png);
+    position: absolute;
+    right: 55px;
+    transform: scale(1.5);
+    top: 750px
+}
+
+a:nth-child(1)[href^=http]{
+    color: rgb(31, 29, 29);
+}
+
+a:only-of-type[href$=css]{
+    text-decoration: none;
+}
+
+a:only-child {
+    text-transform: uppercase;
+}
+
+p:nth-of-type(2)::first-letter{
+    text-decoration:overline;
+}
+
+a:nth-last-child(1){
+    text-decoration: none;
+}
+
+p:first-of-type:nth-last-of-type(2){
+    font-size: 110%;
+}
+
+::first-line{
+    color:black;
 }
